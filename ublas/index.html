@@ -1,0 +1,43 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <title>Boost uBLAS extensions</title>
+   <link rel="Stylesheet" type="text/css" href="../orderud.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="ROBOTS" content="NOARCHIVE">
+</head>
+<body>
+
+Boost uBLAS is an excellent linear algebra library that supports template-expressions to avoid introducing temporaries.
+
+
+<h1>uBLAS extension classes</h1>
+A collection of some extension classes I've developed for uBLAS:
+<ul>
+<li> <b>fixed_array</b> : Stack-based container class of fixed size with no overhead.
+<li> <b>grow_array</b>  : Heap-based container class that re-uses memory on shrinking resize, and only allocates memory when growing beyond capacity.
+<li> <b>mat33</b>       : Stack-based matrix of size 3 x 3.
+<li> <b>quat</b>        : Quaternion rotation class with support for conversion to/from Euler angle rotations in arbitrary order.
+<li> <b>sse_prod</b>    : SSE/OpenMP optimized matrix-matrix and matrix-vector products (uses Win32-specific intrinsics).
+<li> <b>vec3</b>        : Stack-based vector of size 3.
+</ul>
+
+Download <a href="rctl_ublas.zip">sourcecode</a>.
+
+<h3>License</h3>
+License is granted to do whatever you want with the code.
+
+<h3>Links</h3>
+<ul>
+<li> <a href="http://www.boost.org/libs/numeric/ublas/doc/index.htm">Boost uBLAS</a>.
+</ul>
+
+<br><br><br>
+<p>
+Go <a href="../">back</a>.
+<p align="right">
+Last modified <?php echo date("Y-m-d", getlastmod()); ?>.
+</p>
+
+</body>
+</html>
